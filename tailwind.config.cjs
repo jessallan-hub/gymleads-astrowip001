@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     theme: {
         extend: {
@@ -52,18 +52,17 @@ export default {
             }
         }
     },
-},
-plugins: [
-    function ({ addUtilities }) {
-        const newUtilities = {
-            '.text-stroke-white': {
-                '-webkit-text-stroke': '2px #ffffff',
-            },
-            '.text-stroke-2': {
-                '-webkit-text-stroke-width': '2px',
-            },
+    plugins: [
+        function ({ addUtilities }) {
+            const newUtilities = {
+                '.text-stroke-white': {
+                    '-webkit-text-stroke': '2px #ffffff',
+                },
+                '.text-stroke-2': {
+                    '-webkit-text-stroke-width': '2px',
+                },
+            }
+            addUtilities(newUtilities)
         }
-        addUtilities(newUtilities)
-    }
-],
+    ],
 }

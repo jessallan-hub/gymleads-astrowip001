@@ -50,21 +50,65 @@ import Footer from '../components/Footer.astro';
     }
 
     /* Edgy/Premium Component Utilities */
+    /* Edgy/Premium Component Utilities - Converted to standard CSS to avoid @apply build errors */
 	.btn-primary {
-		@apply bg-gradient-to-br from-blue-600 to-blue-700 text-white border border-blue-600 px-8 py-4 font-display font-bold uppercase tracking-wide rounded-lg shadow-premium hover:shadow-premium-hover hover:border-lime-400 hover:-translate-y-1 transition-all text-center inline-block;
+        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        color: white;
+        border: 1px solid #2563eb;
+        padding: 1rem 2rem;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -2px rgba(37, 99, 235, 0.05);
+        transition: all 0.2s;
+        text-align: center;
+        display: inline-block;
+        /* hover effects handled by tailwind classes usually, but here we can use css */
 	}
+    .btn-primary:hover {
+        box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.15), 0 10px 10px -5px rgba(37, 99, 235, 0.04);
+        border-color: #84cc16; /* accent */
+        transform: translateY(-0.25rem);
+    }
 
 	.btn-secondary {
-		@apply bg-white text-ink border border-slate-200 px-8 py-4 font-mono font-bold uppercase tracking-wide rounded-lg hover:bg-slate-50 hover:border-accent hover:text-ink transition-all text-center inline-block;
+        background: white;
+        color: #0f172a;
+        border: 1px solid #e2e8f0;
+        padding: 1rem 2rem;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        border-radius: 0.5rem;
+        transition: all 0.2s;
+        text-align: center;
+        display: inline-block;
 	}
+    .btn-secondary:hover {
+        background: #f8fafc;
+        border-color: #84cc16;
+        color: #0f172a;
+    }
 
     /* Re-mapping 'card-brutal' to 'card-premium' visually without changing component HTML */
     .card-brutal {
-        @apply bg-white border border-slate-200 p-8 rounded-2xl shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all;
+        background: white;
+        border: 1px solid #e2e8f0;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -2px rgba(37, 99, 235, 0.05);
+        transition: all 0.2s;
+    }
+    .card-brutal:hover {
+        box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.15), 0 10px 10px -5px rgba(37, 99, 235, 0.04);
+        transform: translateY(-0.25rem);
     }
     
     /* Utility for colored backgrounds */
     .bg-grid {
-        @apply bg-slate-50;
+        background-color: #f8fafc;
     }
 </style>
