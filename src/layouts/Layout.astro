@@ -1,0 +1,61 @@
+---
+interface Props {
+	title: string;
+    description?: string;
+}
+
+const { 
+    title = "allconvos | Mission Control for Local Legends",
+    description = "The AI receptionist that answers every call, qualifies every lead, and books jobs 24/7."
+} = Astro.props;
+
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:tight,wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body class="antialiased bg-ocean-950 text-sand font-sans selection:bg-neon selection:text-ocean-950 overflow-x-hidden relative min-h-screen">
+        <!-- Global Background Grid -->
+        <div class="fixed inset-0 bg-grid-pattern bg-[length:40px_40px] [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] opacity-20 pointer-events-none z-0"></div>
+
+		<Navbar />
+        
+        <main class="relative z-10">
+		    <slot />
+        </main>
+        
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+    /* Typography Overrides */
+	h1, h2, h3, h4, .font-mono {
+		font-family: 'JetBrains Mono', monospace;
+		letter-spacing: -0.02em;
+	}
+	
+    /* Utility Components using Design Tokens */
+	.glass-card {
+		@apply bg-ocean-900/50 backdrop-blur-md border border-white/10 p-8 rounded-sm;
+	}
+
+	.btn-primary {
+		@apply bg-neon text-ocean-950 px-8 py-4 font-bold rounded-sm border-2 border-neon shadow-glow-md hover:bg-neon-hover hover:shadow-glow-lg transition-all uppercase tracking-wide font-mono inline-block;
+	}
+
+	.btn-secondary {
+		@apply bg-transparent text-neon px-8 py-4 font-bold rounded-sm border-2 border-neon/30 hover:border-neon hover:bg-neon/10 transition-all uppercase tracking-wide font-mono inline-block;
+	}
+</style>
