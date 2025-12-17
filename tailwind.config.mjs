@@ -53,7 +53,6 @@ export default {
         }
     },
 },
-    },
 plugins: [
     function ({ addUtilities }) {
         const newUtilities = {
