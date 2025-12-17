@@ -1,34 +1,51 @@
 ---
 ---
-<section id="problem" class="py-24 relative overflow-hidden">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Your Voicemail is Where <br>
-            <span class="text-red-500">Money Goes to Die.</span>
-        </h2>
-        <p class="text-xl text-gray-400 mb-16">
-            Every missed call is a job going to your competitor. You’re good at what you do, but you can’t be everywhere at once.
+<section id="problem" class="py-24 px-6 bg-blue-50/50">
+    <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="font-display text-4xl lg:text-5xl font-bold uppercase mb-6 text-ink">The <span class="text-transparent bg-clip-text bg-gradient-primary">Silent Killer</span> of Gym Growth</h2>
+        <p class="text-lg font-medium text-muted bg-white border border-slate-200 p-6 rounded-2xl shadow-sm inline-block text-left md:text-center">
+            "I'll call them back later." <br>
+            <span class="text-red-500 font-bold block mt-2">No you won't. And they just signed up down the street.</span>
         </p>
+    </div>
 
-        <div class="grid md:grid-cols-3 gap-8 text-left">
-            <!-- Card 1 -->
-            <div class="glass-card border-red-500/20 hover:border-red-500/50 transition-colors">
-                <div class="text-red-500 text-3xl mb-4">📉</div>
-                <h3 class="text-lg font-bold text-white mb-2">The Pain</h3>
-                <p class="text-sm text-gray-400">You're deep in a job, phone rings. You ignore it. That was a $5,000 bathroom reno gone to the next guy on Google.</p>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <!-- Problem -->
+        <div class="card-premium h-full flex flex-col p-8 bg-white border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-red-200 hover:bg-red-50/30 group">
+            <h3 class="font-display font-bold uppercase text-2xl mb-4 text-slate-800 group-hover:text-red-600 transition-colors">Problem</h3>
+            <p class="text-sm font-medium leading-relaxed text-muted flex-grow">
+                You're coaching a class. The phone rings. You ignore it. 
+                <br><br>
+                <strong class="text-ink">Result:</strong> $0.
+            </p>
+        </div>
+        
+        <!-- Agitation -->
+        <div class="card-premium h-full flex flex-col p-8 bg-white border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-200 hover:bg-orange-50/30 group">
+            <h3 class="font-display font-bold uppercase text-2xl mb-4 text-slate-800 group-hover:text-orange-600 transition-colors">Agitation</h3>
+            <p class="text-sm font-medium leading-relaxed text-muted flex-grow">
+                You spend 2 hours a night sending "Sorry I missed you" texts. They don't reply. They've moved on.
+                <br><br>
+                <strong class="text-ink">Result:</strong> Burnout.
+            </p>
+        </div>
+        
+        <!-- Relief (Robust Reveal) -->
+        <div class="card-premium h-full flex flex-col justify-center text-center p-8 bg-white text-ink hover:bg-slate-900 hover:text-white transition-all duration-300 group cursor-help border border-slate-200 hover:border-slate-900 shadow-sm hover:shadow-xl hover:-translate-y-2">
+            <!-- Default State: Simple Question -->
+            <div class="group-hover:hidden">
+                <h3 class="font-display font-black uppercase text-4xl tracking-tighter text-slate-900">RELIEF?</h3>
+                <p class="text-xs font-bold uppercase text-slate-400 mt-2 tracking-widest">(HOVER TO REVEAL)</p>
             </div>
-             <!-- Card 2 -->
-             <div class="glass-card border-yellow-500/20 hover:border-yellow-500/50 transition-colors">
-                <div class="text-yellow-500 text-3xl mb-4">🔁</div>
-                <h3 class="text-lg font-bold text-white mb-2">The Struggle</h3>
-                <p class="text-sm text-gray-400">You spend your nights playing phone tag, returning missed calls, and drowning in admin instead of relaxing.</p>
-            </div>
-             <!-- Card 3 -->
-             <div class="glass-card border-neon/20 hover:border-neon transition-colors relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-16 h-16 bg-neon/10 rounded-bl-full"></div>
-                <div class="text-neon text-3xl mb-4">🚀</div>
-                <h3 class="text-lg font-bold text-white mb-2">The Fix</h3>
-                <p class="text-sm text-gray-400">We clone your best day. Our AI answers instantly, qualifies the lead, and books the time. You just show up.</p>
+            
+            <!-- Hidden State: Detailed Answer -->
+            <div class="hidden group-hover:block text-left animate-fade-in">
+                <h3 class="font-display font-bold uppercase text-2xl mb-4 text-white pb-2 border-b border-blue-500 inline-block">The Solution</h3>
+                <p class="text-sm font-medium leading-relaxed text-slate-200">
+                    We install a brain. It answers instantly. It qualifies. It books.
+                    <br><br>
+                    <strong class="text-white">Result:</strong> Scale.
+                </p>
             </div>
         </div>
     </div>

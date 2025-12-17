@@ -1,43 +1,48 @@
 ---
 ---
-<section class="py-24">
-    <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-white mb-12 text-center font-mono">Mission Capabilities</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[600px]">
+<section id="features" class="py-24 px-6 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+            <!-- Calendar Command -->
+            <div class="md:col-span-2 md:row-span-2 card-premium flex flex-col justify-between overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full blur-3xl -mr-10 -mt-10 opacity-50"></div>
+                <div class="relative z-10">
+                    <h3 class="font-display font-bold text-3xl uppercase mb-2 text-ink">Calendar Command</h3>
+                    <p class="text-sm font-medium text-muted">Direct write access to your schedule. No double-bookings.</p>
+                </div>
+                <!-- Mini UI Mock -->
+                 <div class="mt-8 border border-slate-200 bg-slate-50 rounded-xl p-4 font-mono text-xs shadow-inner relative z-10">
+                    <div class="flex gap-2 mb-2">
+                        <div class="w-2 h-2 rounded-full bg-slate-300"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-300"></div>
+                    </div>
+                    <div class="space-y-1 text-slate-500">
+                        <div>> CHECK_AVAILABILITY(TODAY)</div>
+                        <div class="text-green-600">> SLOT_FOUND: 17:00</div>
+                        <div class="text-blue-600">> BOOKING_CONFIRMED</div>
+                    </div>
+                </div>
+            </div>
             
-            <!-- Large Feature -->
-            <div class="md:col-span-2 md:row-span-2 glass-card flex flex-col justify-between overflow-hidden relative group">
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-ocean-950/90 z-10"></div>
-                <div class="relative z-20">
-                    <h3 class="text-2xl font-bold text-white mb-2">Smart Scheduling</h3>
-                    <p class="text-gray-400">Syncs directly with your Google/Outlook calendar. No double bookings. Ever.</p>
-                </div>
-                <div class="mt-8 bg-ocean-800/50 border border-white/5 p-4 rounded text-xs font-mono text-neon border-l-4 border-l-neon w-fit z-20">
-                    {">"} Appointment Confirmed <br>
-                    {">"} Tuesday, 10:00 AM <br>
-                    {">"} Site: 12 Shelley St, Lennox
-                </div>
-                <!-- Decorative Graphic -->
-                    <div class="absolute right-0 bottom-0 w-48 h-48 bg-neon/5 rounded-full blur-3xl"></div>
+            <!-- Lead Nurture -->
+            <div class="md:col-span-2 bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl shadow-premium relative overflow-hidden group">
+                 <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
+                <h3 class="font-display font-bold text-2xl uppercase mb-2 group-hover:text-accent transition-colors">Lead Nurture</h3>
+                <p class="text-sm text-slate-300">We don't just answer. We follow up. <br>D1, D3, D7 sequences baked in.</p>
             </div>
-
-            <!-- Feature 2 -->
-            <div class="md:col-span-2 glass-card flex flex-col justify-center">
-                <h3 class="text-xl font-bold text-white mb-2">Omni-Channel Command</h3>
-                <p class="text-gray-400 text-sm">Voice, SMS, Facebook Messenger, Instagram, Email. One brain handling all inputs.</p>
+            
+            <!-- CRM Sync -->
+            <div class="md:col-span-1 bg-accent text-white p-8 rounded-2xl shadow-premium flex flex-col justify-center text-center">
+                <h3 class="font-display font-bold text-xl uppercase mb-2">CRM Sync</h3>
+                <p class="text-xs font-bold font-mono bg-white/20 p-2 rounded-lg inline-block">Mindbody</p>
+                <p class="text-xs font-bold font-mono bg-white/20 p-2 rounded-lg inline-block mt-2">Glofox</p>
             </div>
-
-            <!-- Feature 3 -->
-            <div class="md:col-span-1 glass-card border-neon/20">
-                <h3 class="text-lg font-bold text-white mb-2">Local Dialect</h3>
-                <p class="text-gray-400 text-xs">Trained to understand "arvo", "reno", and Northern Rivers geography.</p>
-            </div>
-
-            <!-- Feature 4 -->
-            <div class="md:col-span-1 glass-card">
-                <h3 class="text-lg font-bold text-white mb-2">CRM Sync</h3>
-                <p class="text-gray-400 text-xs">Pushes lead data straight into your ServiceM8, Tradify, or HubSpot.</p>
+            
+            <!-- SMS Blast -->
+            <div class="md:col-span-1 card-premium flex flex-col justify-center text-center">
+                <h3 class="font-display font-bold text-xl uppercase mb-2 text-ink">SMS Blast</h3>
+                <p class="text-xs font-bold text-muted">Reactivate dead leads.</p>
+                <button class="mt-4 bg-slate-100 text-slate-600 text-xs font-bold py-2 rounded-lg hover:bg-slate-200 transition-colors">Send Campaign</button>
             </div>
         </div>
     </div>
